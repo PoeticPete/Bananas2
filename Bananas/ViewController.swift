@@ -14,17 +14,17 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
     
-    @IBAction func buttonAction(sender: AnyObject) {
+    @IBAction func buttonAction(_ sender: AnyObject) {
         FIRDatabase.database().reference().child("test").setValue(textField.text)
 
         
     }
     
-    @IBAction func getInfoAction(sender: AnyObject) {
+    @IBAction func getInfoAction(_ sender: AnyObject) {
         
-        let req = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"id,name,picture"], tokenString: FBSDKAccessToken.currentAccessToken().tokenString, version: nil, HTTPMethod: "GET")
+        let req = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"id,name,picture"], tokenString: FBSDKAccessToken.current().tokenString, version: nil, httpMethod: "GET")
         
-        req.startWithCompletionHandler({ (connection, result, error : NSError!) -> Void in
+        req?.start(completionHandler: { (connection, result, error : NSError!) -> Void in
             if(error == nil)
             {
                 print("result \(result)")
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var loginButton = FBSDKLoginButton.init()
+        let loginButton = FBSDKLoginButton.init()
         loginButton.center = self.view.center
         self.view.addSubview(loginButton)
         // Do any additional setup after loading the view, typically from a nib.
