@@ -1,0 +1,6 @@
+framework module Pods_Bananas {
+  umbrella header "Pods-Bananas-umbrella.h"
+
+  export *
+  module * { export * }
+}
