@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		089057242BB511DC2902561C /* Pods_Bananas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185554DA421452E484C5DF43 /* Pods_Bananas.framework */; };
+		862B09711DA439DF00422841 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862B096E1DA439DF00422841 /* FBSDKCoreKit.framework */; };
+		862B09721DA439DF00422841 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862B096F1DA439DF00422841 /* FBSDKLoginKit.framework */; };
+		862B09731DA439DF00422841 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862B09701DA439DF00422841 /* FBSDKShareKit.framework */; };
 		86A3672A1DA43281000BDA5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A367291DA43281000BDA5D /* AppDelegate.swift */; };
 		86A3672C1DA43281000BDA5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A3672B1DA43281000BDA5D /* ViewController.swift */; };
 		86A3672F1DA43281000BDA5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A3672D1DA43281000BDA5D /* Main.storyboard */; };
 		86A367311DA43281000BDA5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A367301DA43281000BDA5D /* Assets.xcassets */; };
 		86A367341DA43281000BDA5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A367321DA43281000BDA5D /* LaunchScreen.storyboard */; };
+		86A3673C1DA432EE000BDA5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86A3673B1DA432EE000BDA5D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185554DA421452E484C5DF43 /* Pods_Bananas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bananas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D427A5ED39CBDFE5B3CE08 /* Pods-Bananas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bananas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bananas/Pods-Bananas.release.xcconfig"; sourceTree = "<group>"; };
+		862B096E1DA439DF00422841 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		862B096F1DA439DF00422841 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		862B09701DA439DF00422841 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		86A367261DA43281000BDA5D /* Bananas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bananas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A367291DA43281000BDA5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86A3672B1DA43281000BDA5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,8 @@
 		86A367301DA43281000BDA5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86A367331DA43281000BDA5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86A367351DA43281000BDA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86A3673B1DA432EE000BDA5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		876E6A367C04A28865AF817E /* Pods-Bananas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bananas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bananas/Pods-Bananas.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				862B09731DA439DF00422841 /* FBSDKShareKit.framework in Frameworks */,
+				089057242BB511DC2902561C /* Pods_Bananas.framework in Frameworks */,
+				862B09711DA439DF00422841 /* FBSDKCoreKit.framework in Frameworks */,
+				862B09721DA439DF00422841 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16B6C6C8837B852C13EF462F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				862B096E1DA439DF00422841 /* FBSDKCoreKit.framework */,
+				862B096F1DA439DF00422841 /* FBSDKLoginKit.framework */,
+				862B09701DA439DF00422841 /* FBSDKShareKit.framework */,
+				185554DA421452E484C5DF43 /* Pods_Bananas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		86A3671D1DA43281000BDA5D = {
 			isa = PBXGroup;
 			children = (
 				86A367281DA43281000BDA5D /* Bananas */,
 				86A367271DA43281000BDA5D /* Products */,
+				E159F214408B208531B57BDB /* Pods */,
+				16B6C6C8837B852C13EF462F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +89,18 @@
 				86A367301DA43281000BDA5D /* Assets.xcassets */,
 				86A367321DA43281000BDA5D /* LaunchScreen.storyboard */,
 				86A367351DA43281000BDA5D /* Info.plist */,
+				86A3673B1DA432EE000BDA5D /* GoogleService-Info.plist */,
 			);
 			path = Bananas;
+			sourceTree = "<group>";
+		};
+		E159F214408B208531B57BDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				876E6A367C04A28865AF817E /* Pods-Bananas.debug.xcconfig */,
+				26D427A5ED39CBDFE5B3CE08 /* Pods-Bananas.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86A367381DA43281000BDA5D /* Build configuration list for PBXNativeTarget "Bananas" */;
 			buildPhases = (
+				21A70633BDD3082983DCFE81 /* 📦 Check Pods Manifest.lock */,
 				86A367221DA43281000BDA5D /* Sources */,
 				86A367231DA43281000BDA5D /* Frameworks */,
 				86A367241DA43281000BDA5D /* Resources */,
+				6EAE02B53BC6AA3463AEE635 /* 📦 Embed Pods Frameworks */,
+				2E6306FD63E3B4238769836F /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,12 +165,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				86A367341DA43281000BDA5D /* LaunchScreen.storyboard in Resources */,
+				86A3673C1DA432EE000BDA5D /* GoogleService-Info.plist in Resources */,
 				86A367311DA43281000BDA5D /* Assets.xcassets in Resources */,
 				86A3672F1DA43281000BDA5D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21A70633BDD3082983DCFE81 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2E6306FD63E3B4238769836F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bananas/Pods-Bananas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EAE02B53BC6AA3463AEE635 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bananas/Pods-Bananas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86A367221DA43281000BDA5D /* Sources */ = {
@@ -247,8 +338,13 @@
 		};
 		86A367391DA43281000BDA5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876E6A367C04A28865AF817E /* Pods-Bananas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Bananas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PoeticPete.Bananas;
@@ -258,8 +354,13 @@
 		};
 		86A3673A1DA43281000BDA5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26D427A5ED39CBDFE5B3CE08 /* Pods-Bananas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Bananas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PoeticPete.Bananas;
@@ -286,6 +387,7 @@
 				86A3673A1DA43281000BDA5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
