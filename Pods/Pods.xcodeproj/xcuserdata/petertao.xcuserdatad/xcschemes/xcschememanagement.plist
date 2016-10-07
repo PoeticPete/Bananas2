@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ChameleonFramework.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,22 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>482E2EDEA6FB3B7E4B6BBF3A897FE098</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5172ACAB7FEA22813859DC97CA0AA16F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>52D82BFDD1E808D9CB257431922C1EE4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>6EDC37F3FA92533C6AC3562458AA91F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>89401279435C4174936087F19C8C9346</key>
 		<dict>
 			<key>primary</key>
 			<true/>

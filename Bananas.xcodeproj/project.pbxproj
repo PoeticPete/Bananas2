@@ -11,6 +11,7 @@
 		862B09711DA439DF00422841 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862B096E1DA439DF00422841 /* FBSDKCoreKit.framework */; };
 		862B09721DA439DF00422841 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862B096F1DA439DF00422841 /* FBSDKLoginKit.framework */; };
 		862B09731DA439DF00422841 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862B09701DA439DF00422841 /* FBSDKShareKit.framework */; };
+		86395E7B1DA8593600E32BB2 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86395E7A1DA8593600E32BB2 /* FriendViewController.swift */; };
 		86A3672A1DA43281000BDA5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A367291DA43281000BDA5D /* AppDelegate.swift */; };
 		86A3672C1DA43281000BDA5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A3672B1DA43281000BDA5D /* ViewController.swift */; };
 		86A3672F1DA43281000BDA5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A3672D1DA43281000BDA5D /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		862B096E1DA439DF00422841 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		862B096F1DA439DF00422841 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		862B09701DA439DF00422841 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		86395E7A1DA8593600E32BB2 /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		86A367261DA43281000BDA5D /* Bananas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bananas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A367291DA43281000BDA5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86A3672B1DA43281000BDA5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				86A367291DA43281000BDA5D /* AppDelegate.swift */,
 				86A3672B1DA43281000BDA5D /* ViewController.swift */,
+				86395E7A1DA8593600E32BB2 /* FriendViewController.swift */,
 				86A3672D1DA43281000BDA5D /* Main.storyboard */,
 				86A367301DA43281000BDA5D /* Assets.xcassets */,
 				86A367321DA43281000BDA5D /* LaunchScreen.storyboard */,
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86395E7B1DA8593600E32BB2 /* FriendViewController.swift in Sources */,
 				86A3672C1DA43281000BDA5D /* ViewController.swift in Sources */,
 				86A3672A1DA43281000BDA5D /* AppDelegate.swift in Sources */,
 			);
@@ -350,7 +354,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PoeticPete.Bananas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -367,7 +371,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PoeticPete.Bananas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

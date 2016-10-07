@@ -5,5 +5,4 @@ target 'Bananas' do
 	pod 'Firebase/Core'
 	pod 'Firebase/Database'
 	pod 'FirebaseUI', '~> 0.4'
-	pod 'ChameleonFramework/Swift'
 end

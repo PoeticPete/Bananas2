@@ -5,9 +5,6 @@ PODS:
   - Bolts/AppLinks (1.7.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.7.0)
-  - ChameleonFramework/Default (2.1.0)
-  - ChameleonFramework/Swift (2.1.0):
-    - ChameleonFramework/Default
   - FBSDKCoreKit (4.12.0):
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.12.0):
@@ -73,14 +70,12 @@ PODS:
     - GoogleSymbolUtilities (~> 1.0)
 
 DEPENDENCIES:
-  - ChameleonFramework/Swift
   - Firebase/Core
   - Firebase/Database
   - FirebaseUI (~> 0.4)
 
 SPEC CHECKSUMS:
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
-  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   FBSDKCoreKit: 6e56d5a2a64a755ad4efb5dbeee8f82fb1b99775
   FBSDKLoginKit: 03f68a8d48c2c8bb81d7eb8097973d483543e1f6
   Firebase: 6d4012da1598732a2b43f16d8355eca90f94ed59
@@ -97,6 +92,6 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
 
-PODFILE CHECKSUM: cdcb4a66e72bc4359c7ee80d0a23b7007d21b690
+PODFILE CHECKSUM: ae059964e30820bd8b55b49ff852e4c4ab79107a
 
 COCOAPODS: 1.0.0
