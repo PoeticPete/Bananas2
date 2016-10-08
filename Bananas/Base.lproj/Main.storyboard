@@ -95,10 +95,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Friend View Controller-->
         <scene sceneID="kug-zc-HH2">
             <objects>
-                <viewController id="Y7s-cm-iD2" sceneMemberID="viewController">
+                <viewController id="Y7s-cm-iD2" customClass="FriendViewController" customModule="Bananas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JNO-y7-z0a"/>
                         <viewControllerLayoutGuide type="bottom" id="OrH-3k-Wfj"/>
@@ -110,7 +110,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="81" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="el1-jF-aYk">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="81" id="Lnt-aJ-plq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="friendCell" rowHeight="81" id="Lnt-aJ-plq">
                                         <rect key="frame" x="0.0" y="92" width="375" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lnt-aJ-plq" id="Qui-hp-LXM">
@@ -122,7 +122,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n84-YH-InA">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="squad" translatesAutoresizingMaskIntoConstraints="NO" id="n84-YH-InA">
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="n84-YH-InA" secondAttribute="height" multiplier="1:1" id="ipD-bs-9yh"/>
                                                     </constraints>
@@ -137,6 +137,9 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="SR0-3u-t6u" secondAttribute="trailing" id="v6r-nj-BLo"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="7vm-ip-VCm" kind="show" id="uYO-6V-FJT"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -148,16 +151,40 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="el1-jF-aYk" firstAttribute="top" secondItem="JNO-y7-z0a" secondAttribute="bottom" id="ERy-rx-Cxv"/>
+                            <constraint firstItem="el1-jF-aYk" firstAttribute="top" secondItem="dbW-at-MUo" secondAttribute="top" id="Faa-g1-GgT"/>
                             <constraint firstItem="el1-jF-aYk" firstAttribute="leading" secondItem="dbW-at-MUo" secondAttribute="leading" id="M5J-Ac-rv0"/>
                             <constraint firstAttribute="trailing" secondItem="el1-jF-aYk" secondAttribute="trailing" id="Mfl-n8-Q0q"/>
                             <constraint firstItem="OrH-3k-Wfj" firstAttribute="top" secondItem="el1-jF-aYk" secondAttribute="bottom" id="hEW-H3-HTa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="el1-jF-aYk" id="T6w-A5-gw4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vC6-1u-Olv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="820" y="74.212893553223395"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Glu-Re-9SK">
+            <objects>
+                <viewController id="7vm-ip-VCm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u80-u4-DpV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fhf-wa-JBb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FN2-ic-WyF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flW-fm-ZNd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="75"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="squad" width="960" height="1280"/>
+    </resources>
 </document>
